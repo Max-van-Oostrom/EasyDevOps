@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/frontend/">
+    <Project Path="frontend/ConsoleApp1/ConsoleApp1.csproj" />
+  </Folder>
+</Solution>

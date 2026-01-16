@@ -1,0 +1,110 @@
+# ===================
+# .NET / C# Files
+# ===================
+
+# Build results
+bin/
+obj/
+debug/
+release/
+x64/
+x86/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Build output
+o]t/
+build/
+artifacts/
+
+# ===================
+# Visual Studio
+# ===================
+
+.vs/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.vspscc
+*.vssscc
+*.pidb
+*.scc
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.vsix
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# Rider
+.idea/
+
+# ===================
+# User-specific files
+# ===================
+
+*.rsuser
+*.userprefs
+*.DotSettings.user
+
+# ===================
+# Windows
+# ===================
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===================
+# macOS
+# ===================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ===================
+# Test Results
+# ===================
+
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+# ===================
+# Misc
+# ===================
+
+# Publish output
+publish/
+
+# Logs
+*.log
+logs/
+
+# Local environment settings
+*.local
+appsettings.Development.json
+appsettings.Local.json
