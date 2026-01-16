@@ -7,13 +7,13 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 # ============================================
-# 1. Check .NET SDK (8.0 or higher required)
+# 1. Check .NET SDK (10.0 or higher required)
 # ============================================
-Write-Host "[1/4] Checking .NET SDK (8.0 or higher)..." -ForegroundColor Yellow
+Write-Host "[1/4] Checking .NET SDK (10.0 or higher)..." -ForegroundColor Yellow
 
 $dotnetInstalled = $false
 try {
-    $dotnetVersions = dotnet --list-sdks 2>$null | Where-Object { $_ -match "^([89]|[1-9][0-9]+)\." }
+    $dotnetVersions = dotnet --list-sdks 2>$null | Where-Object { $_ -match "^([1-9][0-9]+)\." }
     if ($dotnetVersions) {
         $installedVersion = ($dotnetVersions | Select-Object -First 1) -replace '\s.*$', ''
         Write-Host "  .NET SDK $installedVersion is already installed." -ForegroundColor Green
@@ -24,20 +24,20 @@ try {
 }
 
 if (-not $dotnetInstalled) {
-    Write-Host "  Installing .NET SDK 8..." -ForegroundColor Yellow
+    Write-Host "  Installing .NET SDK 10..." -ForegroundColor Yellow
     
     # Download and run the official .NET install script
     $dotnetInstallScript = "$env:TEMP\dotnet-install.ps1"
     Invoke-WebRequest -Uri "https://dot.net/v1/dotnet-install.ps1" -OutFile $dotnetInstallScript
     
-    # Install .NET SDK 8 (LTS) to user directory to avoid admin requirements
+    # Install .NET SDK 10 to user directory to avoid admin requirements
     $userDotnetDir = "$env:LOCALAPPDATA\Microsoft\dotnet"
-    & $dotnetInstallScript -Channel 8.0 -InstallDir $userDotnetDir
+    & $dotnetInstallScript -Channel 10.0 -InstallDir $userDotnetDir
     
     # Add to PATH for current session
     $env:PATH = "$userDotnetDir;$env:PATH"
     
-    Write-Host "  .NET SDK 8 installed successfully." -ForegroundColor Green
+    Write-Host "  .NET SDK 10 installed successfully." -ForegroundColor Green
 }
 
 # ============================================
