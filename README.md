@@ -1,1 +1,1 @@
-Look in the scripts folder.
+Look in the scripts folder!
