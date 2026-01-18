@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+**/.git
+**/.gitignore
+**/.vs
+**/*.user
+**/*.md
+**/Jenkinsfile
+**/scripts/

@@ -1,0 +1,6 @@
+services:
+  easydevops:
+    build:
+      context: ./frontend/ConsoleApp1
+      dockerfile: Dockerfile
+    image: easydevops:latest
