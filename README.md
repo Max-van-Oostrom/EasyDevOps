@@ -10,12 +10,8 @@ Een .NET 10 console applicatie met Docker ondersteuning.
 ## Aan de slag (Ubuntu/Linux)
 
 ```bash
-# Installeer Git en Docker (indien nog niet geïnstalleerd)
-sudo apt update
-sudo apt install -y git docker.io docker-compose-v2
-
 # Clone de repository
-git clone https://github.com/your-username/EasyDevOps.git
+git clone https://github.com/max-van-oostrom/EasyDevOps.git
 
 # Ga naar de project folder
 cd EasyDevOps
