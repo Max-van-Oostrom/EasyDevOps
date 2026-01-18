@@ -5,7 +5,7 @@ Een .NET 10 console applicatie met Docker ondersteuning.
 ## Vereisten
 
 - [Git](https://git-scm.com/) geïnstalleerd
-- [Docker](https://www.docker.com/products/docker-desktop/) geïnstalleerd
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) of [Docker Engine](https://docs.docker.com/engine/) geïnstalleerd
 
 ## Aan de slag (Ubuntu/Linux)
 
@@ -53,4 +53,4 @@ services:
 
 ## Scripts
 
-Bekijk de `scripts/` folder voor installatie scripts.
+Bekijk de `scripts/` folder voor een installatie script zonder docker.
